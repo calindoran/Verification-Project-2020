@@ -1,5 +1,7 @@
 package cm;
 
+import org.junit.Assert;
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -94,8 +96,56 @@ public class Rate {
     public BigDecimal calculate(Period periodStay) {
         int normalRateHours = periodStay.occurences(normal);
         int reducedRateHours = periodStay.occurences(reduced);
-        return (this.hourlyNormalRate.multiply(BigDecimal.valueOf(normalRateHours))).add(
+
+        BigDecimal baseCost = (this.hourlyNormalRate.multiply(BigDecimal.valueOf(normalRateHours))).add(
                 this.hourlyReducedRate.multiply(BigDecimal.valueOf(reducedRateHours)));
+
+        switch(kind) {
+            case VISITOR:
+                // code block
+                if (baseCost.doubleValue() <= 8)
+                {
+                    return new BigDecimal(0);
+                }
+                else {
+                    return baseCost.subtract(new BigDecimal(8).divide(new BigDecimal(2)));
+                }
+            case MANAGEMENT:
+                // code block
+                if (baseCost.doubleValue() == 0 || baseCost.doubleValue() <= 3 )
+                {
+                    return new BigDecimal(3);
+                }
+                else {
+                    return baseCost;
+                }
+            case STUDENT:
+                // code block
+                if (baseCost.doubleValue() == 5.50 || baseCost.doubleValue() >= 5.50)
+                {
+                    return baseCost.divide(new BigDecimal(0.25));
+                }
+                else if (baseCost.doubleValue() <= 5.50)
+                {
+                    return baseCost;
+                }
+                break;
+            case STAFF:
+                // code block
+                if (baseCost.doubleValue() >= 16)
+                {
+                    return new BigDecimal(16);
+                }
+                else if (baseCost.doubleValue() <= 16)
+                {
+                    return baseCost;
+                }
+                break;
+            default:
+                // code block
+        }
+
+        return new BigDecimal(0);
     }
 
 }

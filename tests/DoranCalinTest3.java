@@ -10,7 +10,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-public class DoranCalinTest2 {
+public class DoranCalinTest3 {
 
     // ### Rate test methods ###
 
@@ -322,9 +322,149 @@ public class DoranCalinTest2 {
         Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal(3));
     }
 
-    // ### Bug tests ###
+    // ### Task3 Tests ###
 
     @Test
+    public void task3TestVisitorFree() {
+        Period periodA = new Period(0, 7);
+        Period periodB = new Period(8, 12);
+        ArrayList<Period> normalP = new ArrayList<Period>();
+        ArrayList<Period> reducedP = new ArrayList<Period>();
+        normalP.add(periodA);
+        reducedP.add(periodB);
+        CarParkKind kind = CarParkKind.VISITOR;
+        BigDecimal normal = new BigDecimal(2);
+        BigDecimal reduced = new BigDecimal(1);
+        Rate testRate = new Rate(kind, normal, reduced, reducedP, normalP);
+
+        Period periodStay = new Period(1, 5);
+        Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal(0));
+    }
+
+    @Test
+    public void task3TestVisitorHalfPriceAfter() {
+        Period periodA = new Period(0, 7);
+        Period periodB = new Period(8, 12);
+        ArrayList<Period> normalP = new ArrayList<Period>();
+        ArrayList<Period> reducedP = new ArrayList<Period>();
+        normalP.add(periodA);
+        reducedP.add(periodB);
+        CarParkKind kind = CarParkKind.VISITOR;
+        BigDecimal normal = new BigDecimal(2);
+        BigDecimal reduced = new BigDecimal(1);
+        Rate testRate = new Rate(kind, normal, reduced, reducedP, normalP);
+
+        Period periodStay = new Period(1, 7);
+        Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal(8));
+    }
+
+    @Test
+    public void task3TestManagementMinimum() {
+        Period periodA = new Period(0, 7);
+        Period periodB = new Period(8, 12);
+        ArrayList<Period> normalP = new ArrayList<Period>();
+        ArrayList<Period> reducedP = new ArrayList<Period>();
+        normalP.add(periodA);
+        reducedP.add(periodB);
+        CarParkKind kind = CarParkKind.MANAGEMENT;
+        BigDecimal normal = new BigDecimal(2);
+        BigDecimal reduced = new BigDecimal(1);
+        Rate testRate = new Rate(kind, normal, reduced, reducedP, normalP);
+
+        Period periodStay = new Period(0, 1);
+        Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal(3));
+    }
+
+    @Test
+    public void task3TestManagementAfterMin() {
+        Period periodA = new Period(0, 7);
+        Period periodB = new Period(8, 12);
+        ArrayList<Period> normalP = new ArrayList<Period>();
+        ArrayList<Period> reducedP = new ArrayList<Period>();
+        normalP.add(periodA);
+        reducedP.add(periodB);
+        CarParkKind kind = CarParkKind.MANAGEMENT;
+        BigDecimal normal = new BigDecimal(2);
+        BigDecimal reduced = new BigDecimal(1);
+        Rate testRate = new Rate(kind, normal, reduced, reducedP, normalP);
+
+        Period periodStay = new Period(0, 5);
+        Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal(10));
+    }
+
+    @Test
+    public void task3TestStudentAbove() {
+        Period periodA = new Period(0, 7);
+        Period periodB = new Period(8, 12);
+        ArrayList<Period> normalP = new ArrayList<Period>();
+        ArrayList<Period> reducedP = new ArrayList<Period>();
+        normalP.add(periodA);
+        reducedP.add(periodB);
+        CarParkKind kind = CarParkKind.STUDENT;
+        BigDecimal normal = new BigDecimal(2);
+        BigDecimal reduced = new BigDecimal(1);
+        Rate testRate = new Rate(kind, normal, reduced, reducedP, normalP);
+
+        Period periodStay = new Period(0, 3);
+        Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal(5.50));
+    }
+
+    @Test
+    public void task3TestStudentBelow() {
+        Period periodA = new Period(0, 7);
+        Period periodB = new Period(8, 12);
+        ArrayList<Period> normalP = new ArrayList<Period>();
+        ArrayList<Period> reducedP = new ArrayList<Period>();
+        normalP.add(periodA);
+        reducedP.add(periodB);
+        CarParkKind kind = CarParkKind.STUDENT;
+        BigDecimal normal = new BigDecimal(2);
+        BigDecimal reduced = new BigDecimal(1);
+        Rate testRate = new Rate(kind, normal, reduced, reducedP, normalP);
+
+        Period periodStay = new Period(0, 1);
+        Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal(2));
+    }
+
+    @Test
+    public void task3TestStaffAbove() {
+        Period periodA = new Period(0, 7);
+        Period periodB = new Period(8, 12);
+        ArrayList<Period> normalP = new ArrayList<Period>();
+        ArrayList<Period> reducedP = new ArrayList<Period>();
+        normalP.add(periodA);
+        reducedP.add(periodB);
+        CarParkKind kind = CarParkKind.STAFF;
+        BigDecimal normal = new BigDecimal(2);
+        BigDecimal reduced = new BigDecimal(1);
+        Rate testRate = new Rate(kind, normal, reduced, reducedP, normalP);
+
+        Period periodStay = new Period(0, 10);
+        Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal(16));
+    }
+
+    @Test
+    public void task3TestStaffBelow() {
+        Period periodA = new Period(0, 7);
+        Period periodB = new Period(8, 12);
+        ArrayList<Period> normalP = new ArrayList<Period>();
+        ArrayList<Period> reducedP = new ArrayList<Period>();
+        normalP.add(periodA);
+        reducedP.add(periodB);
+        CarParkKind kind = CarParkKind.STAFF;
+        BigDecimal normal = new BigDecimal(2);
+        BigDecimal reduced = new BigDecimal(1);
+        Rate testRate = new Rate(kind, normal, reduced, reducedP, normalP);
+
+        Period periodStay = new Period(0, 2);
+        Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal(4));
+    }
+
+    // ### End of Task3 ###
+
+    // ### Bug tests ###
+
+    @Test(expected = IllegalArgumentException.class)
     public void normalReducedRateZero() {
         Period periodA = new Period(0, 7);
         Period periodB = new Period(8, 12);
@@ -339,7 +479,7 @@ public class DoranCalinTest2 {
         Rate testRate = new Rate(kind, normal, reduced, reducedP, normalP);
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void periodOutOfScope() {
         Period periodA = new Period(0, 24);
         Period periodB = new Period(0, 25); // comment this line out to see it work
@@ -348,8 +488,8 @@ public class DoranCalinTest2 {
         normalP.add(periodA);
         normalP.add(periodB);
         CarParkKind kind = CarParkKind.STUDENT;
-        BigDecimal normal = new BigDecimal(0);
-        BigDecimal reduced = new BigDecimal(0);
+        BigDecimal normal = new BigDecimal(2);
+        BigDecimal reduced = new BigDecimal(1);
         Rate testRate = new Rate(kind, normal, reduced, reducedP, normalP);
     }
 }
