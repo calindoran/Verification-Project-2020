@@ -93,6 +93,7 @@ public class Rate {
         }
         return isValid;
     }
+
     public BigDecimal calculate(Period periodStay) {
         int normalRateHours = periodStay.occurences(normal);
         int reducedRateHours = periodStay.occurences(reduced);
@@ -144,8 +145,6 @@ public class Rate {
             default:
                 // code block
         }
-
-        return new BigDecimal(0);
+        return baseCost;
     }
-
 }
