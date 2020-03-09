@@ -443,23 +443,6 @@ public class DoranCalinTest3 {
         Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal("2.00"));
     }
 
-    @Test(expected = NullPointerException.class)
-    public void task3TestStudentReturn() {
-        Period periodA = new Period(0, 7);
-        Period periodB = new Period(8, 12);
-        ArrayList<Period> normalP = new ArrayList<Period>();
-        ArrayList<Period> reducedP = new ArrayList<Period>();
-        normalP.add(periodA);
-        reducedP.add(periodB);
-        CarParkKind kind = null;
-        BigDecimal normal = new BigDecimal(2);
-        BigDecimal reduced = new BigDecimal(1);
-        Rate testRate = new Rate(kind, normal, reduced, reducedP, normalP);
-
-        Period periodStay = new Period(0, 1);
-        Assert.assertEquals(testRate.calculate(periodStay), null);
-    }
-
     @Test
     public void task3TestStaffAbove() {
         Period periodA = new Period(0, 7);
@@ -492,6 +475,23 @@ public class DoranCalinTest3 {
 
         Period periodStay = new Period(0, 2);
         Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal(4));
+    }
+
+    @Test(expected = NullPointerException.class)
+    public void task3TestNULLReturn() {
+        Period periodA = new Period(0, 7);
+        Period periodB = new Period(8, 12);
+        ArrayList<Period> normalP = new ArrayList<Period>();
+        ArrayList<Period> reducedP = new ArrayList<Period>();
+        normalP.add(periodA);
+        reducedP.add(periodB);
+        CarParkKind kind = null;
+        BigDecimal normal = new BigDecimal(2);
+        BigDecimal reduced = new BigDecimal(1);
+        Rate testRate = new Rate(null, normal, reduced, reducedP, normalP);
+
+        Period periodStay = new Period(0, 1);
+        Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal(2));
     }
 
     // ### End of Task3 ###
