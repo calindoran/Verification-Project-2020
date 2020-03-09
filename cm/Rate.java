@@ -103,6 +103,8 @@ public class Rate {
 
         BigDecimal finalCost = null;
 
+        BigDecimal base = new BigDecimal(5.50);
+
         switch(kind) {
             case VISITOR:
                 // code block
@@ -124,12 +126,12 @@ public class Rate {
                 }
             case STUDENT:
                 // code block
-                if (baseCost.doubleValue() <= 5.50) // It works.. just spits out a huge value, it wont round down to 2 decimal places.
+                if (baseCost.doubleValue() <= 5.5) // It works.. just spits out a huge value, it wont round down to 2 decimal places.
                 {
-                    return baseCost.setScale(2, BigDecimal.ROUND_HALF_EVEN);
+                    return baseCost.setScale(2, BigDecimal.ROUND_DOWN);
                 }
                 else {
-                    return baseCost.subtract(BigDecimal.valueOf(5.50)).multiply(BigDecimal.valueOf(0.75)).add(BigDecimal.valueOf(5.50)).setScale(2, BigDecimal.ROUND_HALF_EVEN);
+                    return baseCost.subtract(BigDecimal.valueOf(5.5)).multiply(BigDecimal.valueOf(0.75)).add(BigDecimal.valueOf(5.5)).setScale(2, BigDecimal.ROUND_DOWN);
                 }
             case STAFF:
                 // code block
@@ -142,6 +144,6 @@ public class Rate {
                     return baseCost;
                 }
         }
-        return baseCost;
+        return finalCost;
     }
 }

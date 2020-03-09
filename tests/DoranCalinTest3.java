@@ -406,7 +406,7 @@ public class DoranCalinTest3 {
         Rate testRate = new Rate(kind, normal, reduced, reducedP, normalP);
 
         Period periodStay = new Period(0, 3);
-        Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal(5.50));
+        Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal("5.87"));
     }
 
     @Test
@@ -423,7 +423,7 @@ public class DoranCalinTest3 {
         Rate testRate = new Rate(kind, normal, reduced, reducedP, normalP);
 
         Period periodStay = new Period(0, 4);
-        Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal(6));
+        Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal("7.37"));
     }
 
     @Test
@@ -440,7 +440,7 @@ public class DoranCalinTest3 {
         Rate testRate = new Rate(kind, normal, reduced, reducedP, normalP);
 
         Period periodStay = new Period(0, 1);
-        Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal(2));
+        Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal("2.00"));
     }
 
     @Test(expected = NullPointerException.class)

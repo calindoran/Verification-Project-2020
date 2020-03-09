@@ -4,7 +4,6 @@
     <list default="true" id="3d059134-a760-43c7-8afa-a6fd95b55a91" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cm/Rate.java" beforeDir="false" afterPath="$PROJECT_DIR$/cm/Rate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/Verification-Project-2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output/production/Verification-Project-2020/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/production/Verification-Project-2020/cm/Rate$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/output/production/Verification-Project-2020/cm/Rate$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/production/Verification-Project-2020/cm/Rate.class" beforeDir="false" afterPath="$PROJECT_DIR$/output/production/Verification-Project-2020/cm/Rate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/DoranCalinTest3.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/DoranCalinTest3.java" afterDir="false" />
@@ -56,16 +55,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DoranCalinTest3.task3TestManagementAfterMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Verification-Project-2020" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DoranCalinTest3" />
-      <option name="METHOD_NAME" value="task3TestManagementAfterMin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DoranCalinTest3.task3TestNone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Verification-Project-2020" />
       <option name="PACKAGE_NAME" value="" />
@@ -86,6 +75,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DoranCalinTest3.task3TestStudentAtBase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Verification-Project-2020" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DoranCalinTest3" />
+      <option name="METHOD_NAME" value="task3TestStudentAtBase" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DoranCalinTest3.task3TestStudentBelow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Verification-Project-2020" />
       <option name="PACKAGE_NAME" value="" />
@@ -100,16 +99,16 @@
       <item itemvalue="JUnit.DoranCalinTest3.task3TestStudentBelow" />
       <item itemvalue="JUnit.DoranCalinTest3" />
       <item itemvalue="JUnit.DoranCalinTest3.task3TestStudentAbove" />
-      <item itemvalue="JUnit.DoranCalinTest3.task3TestManagementAfterMin" />
       <item itemvalue="JUnit.DoranCalinTest3.task3TestNone" />
+      <item itemvalue="JUnit.DoranCalinTest3.task3TestStudentAtBase" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DoranCalinTest3" />
         <item itemvalue="JUnit.DoranCalinTest3.task3TestStudentBelow" />
         <item itemvalue="JUnit.DoranCalinTest3.task3TestStudentAbove" />
+        <item itemvalue="JUnit.DoranCalinTest3.task3TestStudentAtBase" />
         <item itemvalue="JUnit.DoranCalinTest3.task3TestNone" />
-        <item itemvalue="JUnit.DoranCalinTest3.task3TestManagementAfterMin" />
       </list>
     </recent_temporary>
   </component>
@@ -159,22 +158,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="445" y="122" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582812666730" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1583765751966">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1583766898547">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583765751966" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1583765751966">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583766898547" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1583766898547">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583765751966" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1583765751965">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583766898547" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1583766898547">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583765751965" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1583765751966">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583766898547" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1583766898547">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583765751966" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583766898547" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1582820342642">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -209,8 +208,9 @@
     <state x="498" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1582814619746" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Verification_Project_2020$DoranCalinTest3.ic" NAME="DoranCalinTest3 Coverage Results" MODIFIED="1583765751913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Verification_Project_2020$DoranCalinTest3.ic" NAME="DoranCalinTest3 Coverage Results" MODIFIED="1583766898487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Verification_Project_2020$DoranCalinTest3_task3TestStudentAbove.ic" NAME="DoranCalinTest3.task3TestStudentAbove Coverage Results" MODIFIED="1583763936879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Verification_Project_2020$DoranCalinTest3_task3TestStudentAtBase.ic" NAME="DoranCalinTest3.task3TestStudentAtBase Coverage Results" MODIFIED="1583766495644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/VerificationProject2018_master$RateTest_successTest.ic" NAME="RateTest.successTest Coverage Results" MODIFIED="1582884400104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/VerificationProject2018_master$DoranCalinTest2_isValidPeriod.ic" NAME="DoranCalinTest2.isValidPeriod Coverage Results" MODIFIED="1582895796922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/VerificationProject2018_master$DoranCalinTest2_notValidNormalPeriod.ic" NAME="DoranCalinTest2.notValidNormalPeriod Coverage Results" MODIFIED="1582896166421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
