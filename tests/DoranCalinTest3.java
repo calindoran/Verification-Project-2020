@@ -393,7 +393,7 @@ public class DoranCalinTest3 {
     }
 
     @Test
-    public void task3TestStudentAbove() {
+    public void task3TestStudentAtBase() {
         Period periodA = new Period(0, 7);
         Period periodB = new Period(8, 12);
         ArrayList<Period> normalP = new ArrayList<Period>();
@@ -407,6 +407,23 @@ public class DoranCalinTest3 {
 
         Period periodStay = new Period(0, 3);
         Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal(5.50));
+    }
+
+    @Test
+    public void task3TestStudentAbove() {
+        Period periodA = new Period(0, 7);
+        Period periodB = new Period(8, 12);
+        ArrayList<Period> normalP = new ArrayList<Period>();
+        ArrayList<Period> reducedP = new ArrayList<Period>();
+        normalP.add(periodA);
+        reducedP.add(periodB);
+        CarParkKind kind = CarParkKind.STUDENT;
+        BigDecimal normal = new BigDecimal(2);
+        BigDecimal reduced = new BigDecimal(1);
+        Rate testRate = new Rate(kind, normal, reduced, reducedP, normalP);
+
+        Period periodStay = new Period(0, 4);
+        Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal(6));
     }
 
     @Test
@@ -424,6 +441,23 @@ public class DoranCalinTest3 {
 
         Period periodStay = new Period(0, 1);
         Assert.assertEquals(testRate.calculate(periodStay), new BigDecimal(2));
+    }
+
+    @Test(expected = NullPointerException.class)
+    public void task3TestStudentReturn() {
+        Period periodA = new Period(0, 7);
+        Period periodB = new Period(8, 12);
+        ArrayList<Period> normalP = new ArrayList<Period>();
+        ArrayList<Period> reducedP = new ArrayList<Period>();
+        normalP.add(periodA);
+        reducedP.add(periodB);
+        CarParkKind kind = null;
+        BigDecimal normal = new BigDecimal(2);
+        BigDecimal reduced = new BigDecimal(1);
+        Rate testRate = new Rate(kind, normal, reduced, reducedP, normalP);
+
+        Period periodStay = new Period(0, 1);
+        Assert.assertEquals(testRate.calculate(periodStay), null);
     }
 
     @Test

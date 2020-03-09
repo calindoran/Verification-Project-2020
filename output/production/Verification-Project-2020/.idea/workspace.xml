@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d059134-a760-43c7-8afa-a6fd95b55a91" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/VerificationProject2018-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Verification-Project-2020.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cm/Period.java" beforeDir="false" afterPath="$PROJECT_DIR$/cm/Period.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cm/Rate.java" beforeDir="false" afterPath="$PROJECT_DIR$/cm/Rate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/DoranCalinTest3.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/DoranCalinTest3.java" afterDir="false" />
-    </list>
+    <list default="true" id="3d059134-a760-43c7-8afa-a6fd95b55a91" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="147" />
+    <option name="myElementSize" value="198" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -159,22 +152,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="445" y="122" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582812666730" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1583339476908">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1583494836991">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583339476908" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1583339476908">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583494836991" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1583494836991">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583339476908" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1583339476908">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583494836991" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1583494836991">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583339476908" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1583339476908">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583494836991" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1583494836991">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583339476908" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583494836991" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1582820342642">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -199,17 +192,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="584" y="190" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1582814609990" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1583492093527">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1583760700789">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583492093527" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583760700789" />
     <state x="498" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1582814619746">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1582814619746" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Verification_Project_2020$DoranCalinTest3.ic" NAME="DoranCalinTest3 Coverage Results" MODIFIED="1583337508797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Verification_Project_2020$DoranCalinTest3.ic" NAME="DoranCalinTest3 Coverage Results" MODIFIED="1583494197294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/VerificationProject2018_master$RateTest_successTest.ic" NAME="RateTest.successTest Coverage Results" MODIFIED="1582884400104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/VerificationProject2018_master$DoranCalinTest2_isValidPeriod.ic" NAME="DoranCalinTest2.isValidPeriod Coverage Results" MODIFIED="1582895796922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/VerificationProject2018_master$DoranCalinTest2_notValidNormalPeriod.ic" NAME="DoranCalinTest2.notValidNormalPeriod Coverage Results" MODIFIED="1582896166421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

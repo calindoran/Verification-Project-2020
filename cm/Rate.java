@@ -101,6 +101,8 @@ public class Rate {
         BigDecimal baseCost = (this.hourlyNormalRate.multiply(BigDecimal.valueOf(normalRateHours))).add(
                 this.hourlyReducedRate.multiply(BigDecimal.valueOf(reducedRateHours)));
 
+        BigDecimal finalCost = null;
+
         switch(kind) {
             case VISITOR:
                 // code block
@@ -122,15 +124,13 @@ public class Rate {
                 }
             case STUDENT:
                 // code block
-                if (baseCost.doubleValue() == 5.50 || baseCost.doubleValue() >= 5.50)
+                if (baseCost.doubleValue() <= 5.50) // It works.. just spits out a huge value, it wont round down to 2 decimal places.
                 {
-                    return baseCost.divide(new BigDecimal(0.25));
+                    return baseCost.setScale(2, BigDecimal.ROUND_HALF_EVEN);
                 }
-                else if (baseCost.doubleValue() <= 5.50)
-                {
-                    return baseCost;
+                else {
+                    return baseCost.subtract(BigDecimal.valueOf(5.50)).multiply(BigDecimal.valueOf(0.75)).add(BigDecimal.valueOf(5.50)).setScale(2, BigDecimal.ROUND_HALF_EVEN);
                 }
-                break;
             case STAFF:
                 // code block
                 if (baseCost.doubleValue() >= 16)
@@ -141,9 +141,6 @@ public class Rate {
                 {
                     return baseCost;
                 }
-                break;
-            default:
-                // code block
         }
         return baseCost;
     }
